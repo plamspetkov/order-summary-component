@@ -13,41 +13,58 @@
     />
 
     <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>
-      <h1>Order Summary</h1>
-
-      <p>
-        You can now listen to millions of songs, audiobooks, and podcasts on any
-        device anywhere you like!
-      </p>
-
-      <div>
-        <h2>Annual Plan</h2>
-        <p>$59.99/year</p>
-        <a href="">Change</a>
+    <div class="card">
+      <div class="card__hero">
+        <img
+          class="card__hero--img"
+          src="./images/illustration-hero.svg"
+          alt="Dancing girl while listening musing on her smartphone."
+        />
       </div>
+      <div class="card__inner">
+        <div class="inner_info spacer">
+          <h1 class="spacer">Order Summary</h1>
 
-      <button>Proceed to Payment</button>
-      <a href="">Cancel Order</a>
+          <p class="desc">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div class="inner__sub spacer">
+          <div class="inner__sub--icon">
+            <img src="./images/icon-music.svg" alt="Music Icon" />
+          </div>
+          <div class="inner__sub--info">
+            <h2>Annual Plan</h2>
+            <p class="price">$59.99/year</p>
+          </div>
+          <div class="inner_link sub">
+            <a class="inner__link--a" href="#">Change</a>
+          </div>
+        </div>
+
+        <div class="inner__btn spacer">
+          <a href="#"><button class="btn">Proceed to Payment</button></a>
+        </div>
+        <div class="inner__link">
+          <a class="inner__link--b" href="#">Cancel Order</a>
+        </div>
+      </div>
     </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://plamspetkov.com">Plamen Petkov</a>.
     </div>
   </body>
 </html>
